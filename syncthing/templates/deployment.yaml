@@ -9,6 +9,8 @@ spec:
   selector:
     matchLabels:
       {{- include "syncthing.selectorLabels" . | nindent 6 }}
+  strategy:
+    type: Recreate
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -56,4 +58,5 @@ spec:
         persistentVolumeClaim:
           claimName: {{ include "syncthing.fullname" . }}-data
       - name: config
-        emptyDir: {}
+        persistentVolumeClaim:
+          claimName: {{ include "syncthing.fullname" . }}-config
