@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  syncthing:
+  - apiVersion: v2
+    appVersion: 1.20.3
+    created: "2022-07-24T10:01:44.073574568Z"
+    description: Syncthing helm chart
+    digest: 48a59b5a81852c59cbf2ac0b71966cf17c6581c76cbd2e303fa24678a35a80e0
+    name: syncthing
+    type: application
+    urls:
+    - https://github.com/kmjayadeep/syncthing-charts/releases/download/syncthing-0.1.0/syncthing-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-07-24T10:01:44.073615872Z"
