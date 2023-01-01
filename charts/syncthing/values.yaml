@@ -38,8 +38,16 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
-service:
-  type: ClusterIP
+services:
+  ui:
+    annotations: {}
+    type: ClusterIP
+  sync:
+    annotations: {}
+    type: ClusterIP
+  discovery:
+    annotations: {}
+    type: ClusterIP
 
 ingress:
   enabled: false
